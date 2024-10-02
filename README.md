@@ -1,7 +1,7 @@
 # Hello, I'm Piotr Kołodziejczyk
 <a href="https://www.linkedin.com/in/piotr-ko%C5%82odziejczyk-278988160/"><img src="https://img.shields.io/badge/-LinkedIn-0072b1?&style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
-I am a recent graduate with a profound interest in technology and a dedication to solving complex problems.
+I have a profound interest in technology and a dedication to solving complex problems.
 
 ## Objective
 
