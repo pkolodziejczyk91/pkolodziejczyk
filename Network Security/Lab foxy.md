@@ -19,28 +19,36 @@ IRATA, uklivemy[.]gq, 20.238.64.240, freenom
 ![image](https://github.com/user-attachments/assets/d09b4b6a-6377-440a-866d-b39fad0a3188)
 
 5. Visit https://www.joesandbox.com/analysis/1319345/1/html. Investigate the MITRE ATT&CK Matrix to understand the Collection activities this file can take, and what the potential impact is to the Executives work mobile phone.
-Submit the 5 Technique names in alphabetical order
+Submit the 5 Technique names in alphabetical order: 
+Access Contact List, Access Stored Application Data, Capture SMS Messages, Location Tracking, Network Information Discovery
 
 6. A junior analyst was handling an event that involved outbound connections to a private address and didn't perform any further analysis on the IP. What are the two ports used by the IP 192.236.198.236?
+1505, 1506
+![image](https://github.com/user-attachments/assets/b857a478-724e-4fd4-84e6-f1fe92b6103f)
 
 7.Use the reference to help you further research the IP. What is the C2 domain?
+ianticrish[.]tk
 
 8. What is the likely delivery method into our organization? Provide the Technique name and Technique ID from ATT&CK.
+Phishing, T1566
+![image](https://github.com/user-attachments/assets/7a85f8e8-9e62-49cd-b111-038b346301dc)
 
-9. Investigate further and try to find the name of the weaponized Word document, so we can use our EDR to check if it is present anywhere else within the organization.
 
-10. What is the name of the .JAR file dropped by the Word document?
+10. Investigate further and try to find the name of the weaponized Word document, so we can use our EDR to check if it is present anywhere else within the organization.
 
-11. Executives have expressed concern about allowing employees to visit Discord on the corporate network because of online reports that it can be used for malware delivery and data exfiltration. 
+
+12. What is the name of the .JAR file dropped by the Word document?
+
+13. Executives have expressed concern about allowing employees to visit Discord on the corporate network because of online reports that it can be used for malware delivery and data exfiltration. 
 Investigate how Discord can be abused for malicious file storage/distribution! What is the URL of the Discord CDN, ending with /attachments/?
 
-12. Looking at all export files, how many rows reference this URL? (include duplicates)
+14. Looking at all export files, how many rows reference this URL? (include duplicates)
 
-13. Based on this information, what is the name of the malware family that is being widely distributed via Discord?
+15. Based on this information, what is the name of the malware family that is being widely distributed via Discord?
 
-14. We can proactively use indicators from threat feeds for detection, or for prevention via blocking. When it comes to blocking indicators, it is crucial that they are from a reputable source and have a high level of confidence to prevent blocking legitimate entities.
+16. We can proactively use indicators from threat feeds for detection, or for prevention via blocking. When it comes to blocking indicators, it is crucial that they are from a reputable source and have a high level of confidence to prevent blocking legitimate entities.
 How many rows in the full_urls.csv have a confidence rating of 100, and would likely be safe to block on the web proxy?
 
-15. An analyst has reported activity coming from an IP address using source port 8001, but they don't understand what this IP is trying to achieve. Looking at full_ip-port.csv in Gnumeric, filter on malware_printable = Unknown malware, and find an IP that is using port 8001. What is the IP address value?
+17. An analyst has reported activity coming from an IP address using source port 8001, but they don't understand what this IP is trying to achieve. Looking at full_ip-port.csv in Gnumeric, filter on malware_printable = Unknown malware, and find an IP that is using port 8001. What is the IP address value?
 
-16. Investigating the reference material, what is the CVE ID of the vulnerability that this IP has been trying to exploit? And what is the industry nickname for this vulnerability?
+18. Investigating the reference material, what is the CVE ID of the vulnerability that this IP has been trying to exploit? And what is the industry nickname for this vulnerability?
