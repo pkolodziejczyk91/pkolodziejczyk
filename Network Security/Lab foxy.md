@@ -33,22 +33,34 @@ ianticrish[.]tk
 Phishing, T1566
 ![image](https://github.com/user-attachments/assets/7a85f8e8-9e62-49cd-b111-038b346301dc)
 
+9. Investigate further and try to find the name of the weaponized Word document, so we can use our EDR to check if it is present anywhere else within the organization.
+08.08.2022 pazartesi siparişler.docx
 
-10. Investigate further and try to find the name of the weaponized Word document, so we can use our EDR to check if it is present anywhere else within the organization.
+10. What is the name of the .JAR file dropped by the Word document?
+NMUWYTGOKCTUFSVCHRSLKJYOWPRFSYUECNLHFLTBLFKVTIJJMQ.JAR
 
-
-12. What is the name of the .JAR file dropped by the Word document?
-
-13. Executives have expressed concern about allowing employees to visit Discord on the corporate network because of online reports that it can be used for malware delivery and data exfiltration. 
+11. Executives have expressed concern about allowing employees to visit Discord on the corporate network because of online reports that it can be used for malware delivery and data exfiltration. 
 Investigate how Discord can be abused for malicious file storage/distribution! What is the URL of the Discord CDN, ending with /attachments/?
+https://cdn.discordapp.com/attachments/
+![image](https://github.com/user-attachments/assets/dd2334e6-e56d-479f-9549-0a3a6d57c9d8)
 
-14. Looking at all export files, how many rows reference this URL? (include duplicates)
+12. Looking at all export files, how many rows reference this URL? (include duplicates)
+565
+![image](https://github.com/user-attachments/assets/a9880616-9428-4387-84cb-7bb74d709e94)
 
-15. Based on this information, what is the name of the malware family that is being widely distributed via Discord?
+13. Based on this information, what is the name of the malware family that is being widely distributed via Discord?
+Dridex
+![image](https://github.com/user-attachments/assets/03c30820-2456-4840-aba5-4651b753e552)
 
-16. We can proactively use indicators from threat feeds for detection, or for prevention via blocking. When it comes to blocking indicators, it is crucial that they are from a reputable source and have a high level of confidence to prevent blocking legitimate entities.
+14. We can proactively use indicators from threat feeds for detection, or for prevention via blocking. When it comes to blocking indicators, it is crucial that they are from a reputable source and have a high level of confidence to prevent blocking legitimate entities.
 How many rows in the full_urls.csv have a confidence rating of 100, and would likely be safe to block on the web proxy?
+39993
+![image](https://github.com/user-attachments/assets/38a8990c-fcac-40e3-a357-1f7ef6823813)
 
-17. An analyst has reported activity coming from an IP address using source port 8001, but they don't understand what this IP is trying to achieve. Looking at full_ip-port.csv in Gnumeric, filter on malware_printable = Unknown malware, and find an IP that is using port 8001. What is the IP address value?
+15. An analyst has reported activity coming from an IP address using source port 8001, but they don't understand what this IP is trying to achieve. Looking at full_ip-port.csv in Gnumeric, filter on malware_printable = Unknown malware, and find an IP that is using port 8001. What is the IP address value?
+107.172.214.23
+![image](https://github.com/user-attachments/assets/4ec72028-7d2d-477e-a557-1d3d3f35ba3e)
 
-18. Investigating the reference material, what is the CVE ID of the vulnerability that this IP has been trying to exploit? And what is the industry nickname for this vulnerability?
+16. Investigating the reference material, what is the CVE ID of the vulnerability that this IP has been trying to exploit? And what is the industry nickname for this vulnerability?
+CVE-2021-44228, Log4Shell
+![image](https://github.com/user-attachments/assets/c63c55e2-3682-43a3-95e8-2c64dbd3506f)
